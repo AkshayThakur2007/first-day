@@ -1,0 +1,14 @@
+total_bottles = int(input("Enter total budwiser bottles: "))
+bottles_perday = int(input("Enter bottles you drink per day: "))
+
+day = 1
+while total_bottles > 0:
+    if total_bottles >= bottles_perday:
+        print(f" {day} {bottles_perday} bottles. {total_bottles - bottles_perday} left.")
+        total_bottles -= bottles_perday
+    else:
+        print(f"{day}:{total_bottles} bottle(s). 0 left.")
+        total_bottles = 0
+    day += 1
+
+print("Please refill the stock!")
