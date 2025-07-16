@@ -1,0 +1,22 @@
+gender_input = int(input("""1 FOR MALE
+2 FOR FEMALE
+>> """))
+
+if gender_input == 1:
+    age = int(input("Enter your age: "))
+    if age >= 21:
+        print("You are a man and can drive fast (over 200KMPH)")
+    elif age >= 18:
+        print("You are a man and now you are eligible to drive.")
+    else:
+        print("Dr. Driving khel tu ghar baithkar!")
+
+elif gender_input == 2:
+    age = int(input("Enter your age: "))
+    if age >= 18:
+        print("You can ride an Activa.")
+    else:
+        print("Bhaande maanj!")
+
+else:
+    print("Invalid input. Please enter 1 for Male or 2 for Female.")
