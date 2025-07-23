@@ -1,0 +1,17 @@
+class Dog:
+    count = 0
+
+    def __init__(self, name):  # Corrected method name
+        self.name = name
+        Dog.count += 1
+
+    @classmethod
+    def total_dogs(cls):
+        print(f"Total Dogs: {cls.count}")
+
+# Creating dog objects
+d1 = Dog("Shadow")
+d2 = Dog("Jack")
+
+# Calling class method
+Dog.total_dogs()
