@@ -1,0 +1,18 @@
+# Step 1: Create two lists
+list1 = [10, 0, 5, '', 12]
+list2 = [False, 20, None, 8, 0]
+
+# Step 2: Initialize a third list to hold 25 where values are not true
+list3 = []
+
+# Step 3: Iterate and check each value in list1 and list2
+for val1, val2 in zip(list1, list2):
+    if not val1 or not val2:
+        list3.append(25)
+
+# Step 4: Print the result
+print("List1:", list1)
+print("List2:", list2)
+print("List3 (contains 25 where either list1 or list2 has a non-true value):", list3)
+
+
